@@ -1,0 +1,152 @@
+header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+img {
+	/* border: 2px black solid; */
+	width: 600px;
+}
+
+#difficultyBtns {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#flagImg {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+#answerBtns {
+	display: grid;
+	grid-template-columns: auto auto;
+	row-gap: 10px;
+	column-gap: 10px;
+	justify-content: center;
+}
+
+main {
+	/* border: solid 1px black; */
+	height: 100%;
+}
+
+aside {
+	justify-content: center;
+}
+
+#sbmtBtn {
+	width: 75px;
+	height: 35px;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	font-family: inherit;
+	border-radius: 10px;	
+	background-color: #F98948;
+	color: ghostwhite;
+}
+
+#username {
+	max-width: 190px;
+	height: 44px;
+	font: inherit;
+	font-weight: bold;
+	background-color: #05060f0a;
+	border-radius: 10px;
+	border: 2px solid transparent;
+	font-size: 1rem;
+	margin-bottom: 10px;
+}
+
+#username:focus {
+	outline: none;
+	font: inherit;
+}
+
+#username-text {
+	display: block;
+	font-weight: bold;
+	color: #05060f99;
+	text-align: center;
+}
+form {
+	text-align: center;
+}
+
+#formDiv {
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	width: 300px;
+	height: 50px;
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: 700;
+	font-size: 20px;
+	border-radius: 15px;
+	background-color: #E7EB90;
+	color: #632B30;
+}
+
+button {
+	z-index: 10;
+	transition: transform 0.4s;
+}
+
+button:hover {
+	color: black;
+	transform: scale(0.9);
+}
+
+footer {
+	text-align: center;
+}
+
+body {
+	height: 90%;
+	background: linear-gradient(120deg, #632B30 0%, #2274A5 100%);
+	/* background: linear-gradient(120deg, #2274A5 0%, #632B30 100%); */
+}
+
+html {
+	height: 100%;
+}
+
+#btn0 {
+	grid-column: 1/1;
+	grid-row: 1/1;
+}
+#btn1 {
+	grid-column: 2/2;
+	grid-row: 1/1;
+}
+#btn2 {
+	grid-column: 1/1;
+	grid-row: 2/2;
+}
+#btn3 {
+	grid-column: 2/2;
+	grid-row: 2/2;
+}
+
+#streakNum {
+	font-size: large;
+}
+
+@media screen and (max-width: 840px) {
+	img {
+		width: 300px;
+	}
+	button {
+		width: 150px;
+	}
+}
