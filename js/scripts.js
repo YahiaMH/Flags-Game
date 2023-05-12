@@ -27,11 +27,12 @@ function updateStreak() {
 		"<br><p id='streakNum'>Streak: " + streak + "</p>";
 }
 function changeColors() {
-	document.getElementsByClassName("incorrect")[i].style.transition = "background-color 0.5s";
 	for (let i = 0; i < 3; i++) {
+		document.getElementsByClassName("incorrect")[i].style.transition = "background-color 0.2s";
 		document.getElementsByClassName("incorrect")[i].style.backgroundColor =
 			"red";
 	}
+	document.getElementsByClassName("correct")[0].style.transition = "background-color 0.2s";
 	document.getElementsByClassName("correct")[0].style.backgroundColor = "green";
 }
 
