@@ -17,7 +17,6 @@ function correctButton(difficulty) {
 	document.getElementsByTagName("footer")[0].innerHTML += "<br>CORRECT!";
 	changeColors();
 	streak++;
-	fetch("http://localhost:8000/addstreak.php", {method: "POST"});
 	updateStreak();
 	setTimeout(generateQuestion, 1500, difficulty);
 }
@@ -187,7 +186,7 @@ function generateQuestion(difficulty) {
 	}
 }
 
-function difficultyButtons() {	
+function difficultyButtons() {
 	document.getElementsByTagName('header')[0].innerHTML = "";
 	main.innerHTML =
 		"<section id='difficultyBtns'><button type='button' onclick='easyBtn()'>Easy</button><br><button type='button' onclick='mediumBtn()'>Medium</button><br><button type='button' onclick='hardBtn()'>Hard</button></section>";
@@ -197,7 +196,7 @@ function difficultyButtons() {
 const form = document.getElementsByTagName('form')[0];
 
 form.addEventListener('submit', function(event) {
-	
+
 	event.preventDefault();
 	difficultyButtons();
 });
