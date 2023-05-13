@@ -29,10 +29,12 @@ function updateStreak() {
 function changeColors() {
 	for (let i = 0; i < 3; i++) {
 		document.getElementsByClassName("incorrect")[i].style.transition = "background-color 0.2s";
+		document.getElementsByClassName("incorrect")[i].style.transition = "transform 0.4s";
 		document.getElementsByClassName("incorrect")[i].style.backgroundColor =
 			"red";
 	}
 	document.getElementsByClassName("correct")[0].style.transition = "background-color 0.2s";
+	document.getElementsByClassName("correct")[0].style.transition = "transform 0.4s";
 	document.getElementsByClassName("correct")[0].style.backgroundColor = "green";
 }
 
