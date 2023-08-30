@@ -1,3 +1,8 @@
+// const fs = require('fs').promises;
+// import fs from "../node_modules/fs-js/index.js";
+// const db = 
+
+
 var streak = 0;
 var main = document.getElementsByTagName("main")[0];
 
@@ -189,14 +194,17 @@ function generateQuestion(difficulty) {
 function difficultyButtons() {
 	document.getElementsByTagName('header')[0].innerHTML = "";
 	main.innerHTML =
-		"<section id='difficultyBtns'><button type='button' onclick='easyBtn()'>Easy</button><br><button type='button' onclick='mediumBtn()'>Medium</button><br><button type='button' onclick='hardBtn()'>Hard</button></section>";
+		"<section id='difficultyBtns'><button type='button' onclick='easyBtn()'>Easy</button><br><button type='butthttps://flags-game.yahiamh.repl.coon' onclick='mediumBtn()'>Medium</button><br><button type='button' onclick='hardBtn()'>Hard</button></section>";
 }
 
 
 const form = document.getElementsByTagName('form')[0];
 
-form.addEventListener('submit', function(event) {
+// form.addEventListener('submit', function(event) {
+// 	var fetchedItem = fetch('../connect.php');
+// 	console.log(fetchedItem);
+// 	// event.preventDefault();
+// 	difficultyButtons();
+// });
 
-	event.preventDefault();
-	difficultyButtons();
-});
+difficultyButtons();
