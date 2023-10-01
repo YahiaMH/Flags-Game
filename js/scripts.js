@@ -36,10 +36,13 @@ function changeColors() {
 		document.getElementsByClassName("incorrect")[i].style.transition = "transform 0.4s";
 		document.getElementsByClassName("incorrect")[i].style.backgroundColor =
 			"red";
+		document.getElementsByClassName("incorrect")[i].disabled =
+			true;
 	}
 	document.getElementsByClassName("correct")[0].style.transition = "background-color 0.2s";
 	document.getElementsByClassName("correct")[0].style.transition = "transform 0.4s";
 	document.getElementsByClassName("correct")[0].style.backgroundColor = "green";
+	document.getElementsByClassName("correct")[0].disabled = true;
 }
 
 function easyBtn() {
